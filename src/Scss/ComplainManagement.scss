@@ -1,0 +1,50 @@
+@use "../Main.scss";
+
+.complaint-management {
+  margin-left: 19%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+
+  h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .complaint-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+    thead {
+      background-color: Main.$primary-color;
+      color: #fff;
+
+      th {
+        padding: 12px;
+        font-weight: bold;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+
+        &:hover {
+          background-color: #e8f4fd;
+        }
+
+        td {
+          padding: 12px;
+          border-bottom: 1px solid #ddd;
+        }
+      }
+    }
+  }
+}
